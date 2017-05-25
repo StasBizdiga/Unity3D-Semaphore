@@ -1381,7 +1381,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 116
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 2}
       propertyPath: m_CollisionDetection
@@ -2206,8 +2206,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1095238829}
   - component: {fileID: 1095238828}
-  - component: {fileID: 1095238827}
   - component: {fileID: 1095238826}
+  - component: {fileID: 1095238827}
   m_Layer: 0
   m_Name: Asphalt_plane
   m_TagString: Untagged
@@ -2247,8 +2247,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1095238827
-MeshCollider:
+--- !u!65 &1095238827
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -2257,10 +2257,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_Size: {x: 10, y: 0.002, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1095238828
 MeshFilter:
   m_ObjectHideFlags: 0
