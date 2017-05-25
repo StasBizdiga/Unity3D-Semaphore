@@ -174,8 +174,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012629215544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 4.5, y: -2.5, z: -3}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.55}
   m_Children:
   - {fileID: 4000014263383072}
   - {fileID: 4000010535234740}
@@ -312,11 +312,11 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 1
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_AngularDrag: 10
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!65 &65000010185124478
 BoxCollider:
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc461b3a4a7e2b45b60a1c768eaafb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 20
+  acceleration: 10
   steering: 90
   BrkLight1: {fileID: 1000011783725156}
   BrkLight2: {fileID: 1000011654438246}
