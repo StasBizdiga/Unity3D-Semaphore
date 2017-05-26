@@ -2,7 +2,7 @@
 
 public class control : MonoBehaviour {
  
-     public float acceleration;
+public float acceleration;
 public float steering;
 private Rigidbody rb;
     public GameObject BrkLight1, BrkLight2;
@@ -13,8 +13,6 @@ private Rigidbody rb;
 
 void FixedUpdate()
 {
-
-
 
         if (Input.GetKey(KeyCode.W))
         {
