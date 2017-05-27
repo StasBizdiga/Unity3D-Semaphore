@@ -1062,19 +1062,19 @@ MonoBehaviour:
   maxSteerAngle: 45
   maxMotorTorque: 150
   currentSpeed: 0
-  maxSpeed: 350
+  maxSpeed: 300
   isBraking: 0
   frontLeftW: {fileID: 146192953236198224}
   frontRightW: {fileID: 146305058189812406}
   backLeftW: {fileID: 146991561553133138}
   backRightW: {fileID: 146151059421510456}
-  maxBrakeTorque: 150
+  maxBrakeTorque: 200
   stopLight1: {fileID: 108000011945333564}
   stopLight2: {fileID: 108000012808810478}
   sensorLength: 1.5
   frontSensorPos: 0
   frontSideSensorPos: 0
-  frontSensorAngle: 15
+  frontSensorAngle: 20
 --- !u!114 &114577601984234332
 MonoBehaviour:
   m_ObjectHideFlags: 1

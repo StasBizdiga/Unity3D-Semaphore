@@ -7,7 +7,7 @@ public class Spawner : MonoBehaviour {
     //Check Colliders, randomly choose one and instantiate a random object from a public prefab list 
     public float interval = 5; //for 5 seconds
     float timer;
-
+    
     [Header("Car Prefabs")]
     public List<GameObject> car = new List<GameObject>();
 
@@ -26,7 +26,7 @@ public class Spawner : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown("[*]") && interval > 1.0f) { interval -= 0.5f; } // Decrease to min 0.5s per interval
+        if (Input.GetKeyDown("[*]") && interval > 2.0f) { interval -= 0.5f; } // Decrease to min 0.5s per interval
         else if (Input.GetKeyDown("[/]") && interval < 30.0f) { interval += 0.5f; } // Increase max 60s per interval
 
         if (Time.time >= timer) //every interval do:
@@ -36,10 +36,13 @@ public class Spawner : MonoBehaviour {
         }
     }
 
+
     void SpawnCar()
     {
-        location = Random.Range(0, spawn.Count );
-        type = Random.Range(0, car.Count);
+        location += 1; 
+        type = Random.Range(0, car.Count-1);
+        if (location == 8) { location = 0; }
         Instantiate(car[type], spawn[location].transform.position, spawn[location].transform.rotation);
+        
     }
 }
