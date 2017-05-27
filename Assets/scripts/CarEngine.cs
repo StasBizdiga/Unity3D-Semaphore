@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class CarEngine : MonoBehaviour
 {
+    public string comesFrom;
+    int pathChoice; // random choice
     public Transform path;
     private List<Transform> nodes = new List<Transform>();
     private int currentNode = 0;
@@ -30,12 +31,18 @@ public class CarEngine : MonoBehaviour
 
     void Start()
     {
+        if (this.transform.position.x > 5f) { comesFrom = "East"; }
+        else if (this.transform.position.z > 5f) { comesFrom = "North"; }
+        else if (this.transform.position.x < -5f) { comesFrom = "West"; }
+        else if (this.transform.position.z < -5f) { comesFrom = "South"; } 
+        pathChoice = Random.Range(0, 4); //
+        path = GameObject.FindWithTag(comesFrom).transform; //
         currentNode = 0;
-        Transform[] pathTransforms = path.GetComponentsInChildren<Transform>();
+        Transform[] pathTransforms = path.GetChild(pathChoice).GetComponentsInChildren <Transform>(); //
         nodes = new List<Transform>();
         foreach (var item in pathTransforms)
         {
-            if (item != path.transform)
+            if (item != path.GetChild(pathChoice).transform)
             {
                 nodes.Add(item);
             }
@@ -55,7 +62,7 @@ public class CarEngine : MonoBehaviour
         RaycastHit hit = new RaycastHit();
         Vector3 sensorStartingPos = transform.position;
         sensorStartingPos.z += frontSensorPos;
-        isBraking = false;
+        isBraking = false;  //
         if (Physics.Raycast(sensorStartingPos, transform.forward, out hit, sensorLength)) //front center sensor
         {
             Debug.DrawLine(sensorStartingPos, hit.point);
@@ -89,7 +96,7 @@ public class CarEngine : MonoBehaviour
             Debug.DrawLine(sensorStartingPos, hit.point);
             isBraking = true;
         }
-
+    
     }
     private void Braking()
     {

@@ -8,6 +8,11 @@ TagManager:
   - SpecialCar
   - Person
   - Semaphore
+  - PATH
+  - East
+  - South
+  - West
+  - North
   layers:
   - Default
   - TransparentFX
@@ -24,7 +29,7 @@ TagManager:
   - Semafore
   - Boundary
   - SIGHT
-  - 
+  - PATHWAYS
   - 
   - 
   - 

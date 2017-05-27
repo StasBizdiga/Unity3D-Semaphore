@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4000014263383072}
   - component: {fileID: 33000013691295782}
-  - component: {fileID: 65000013235638162}
   - component: {fileID: 23000013967430214}
   m_Layer: 8
   m_Name: Base
@@ -104,7 +103,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4000010535234740}
   - component: {fileID: 33000012144151182}
-  - component: {fileID: 65000010185124478}
   - component: {fileID: 23000013719894986}
   m_Layer: 8
   m_Name: Roof
@@ -284,7 +282,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4791100918153836}
-  - component: {fileID: 64568992599109280}
   - component: {fileID: 23475637830094826}
   m_Layer: 8
   m_Name: Body
@@ -387,7 +384,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012629215544}
   m_LocalRotation: {x: -0, y: 0.7071079, z: -0, w: -0.70710576}
-  m_LocalPosition: {x: 9.09, y: -0.053000003, z: 0.93}
+  m_LocalPosition: {x: 11.25, y: 0.5, z: 1.75}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.55}
   m_Children:
   - {fileID: 4229450016702710}
@@ -869,44 +866,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64568992599109280
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1735085159107746}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 0}
---- !u!65 &65000010185124478
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013785242516}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65000013235638162
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010761859372}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65908922543094364
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -980,7 +939,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1052,7 +1011,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1098,11 +1057,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8205fc27023aa85488aabcc8952d8cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  comesFrom: 
   path: {fileID: 0}
   maxSteerAngle: 45
-  maxMotorTorque: 90
+  maxMotorTorque: 150
   currentSpeed: 0
-  maxSpeed: 200
+  maxSpeed: 350
   isBraking: 0
   frontLeftW: {fileID: 146192953236198224}
   frontRightW: {fileID: 146305058189812406}
@@ -1111,10 +1071,10 @@ MonoBehaviour:
   maxBrakeTorque: 150
   stopLight1: {fileID: 108000011945333564}
   stopLight2: {fileID: 108000012808810478}
-  sensorLength: 2
+  sensorLength: 1.5
   frontSensorPos: 0
-  frontSideSensorPos: 0.3
-  frontSensorAngle: 30
+  frontSideSensorPos: 0
+  frontSensorAngle: 15
 --- !u!114 &114577601984234332
 MonoBehaviour:
   m_ObjectHideFlags: 1
