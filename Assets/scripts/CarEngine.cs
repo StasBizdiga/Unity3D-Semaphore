@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class CarEngine : MonoBehaviour
 {
+    public bool is_specialCar; 
     public string comesFrom;
     int pathChoice; // random choice
     public Transform path;

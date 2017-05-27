@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SemaphoreLogic : MonoBehaviour {
-
+    
     public GameObject L1,L2,L3,L4,L5,L6,L7,L8; // Light: odd-green, even-red
     public GameObject Stop1, Stop2, Stop3, Stop4; //Virtual obstacle for red light
     static bool VerticalFlowAllowed;
@@ -11,7 +11,7 @@ public class SemaphoreLogic : MonoBehaviour {
     float timer;
 
 	void Start () {
-        VerticalFlowAllowed = true;
+        VerticalFlowAllowed = false; 
         timer = Time.time + interval;
     }
 

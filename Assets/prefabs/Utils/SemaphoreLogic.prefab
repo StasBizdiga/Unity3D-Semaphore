@@ -42,7 +42,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1496798068015906
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,7 +74,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1937259973814528
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,4 +231,4 @@ MonoBehaviour:
   Stop2: {fileID: 1937259973814528}
   Stop3: {fileID: 1597342572476482}
   Stop4: {fileID: 1496798068015906}
-  interval: 10
+  interval: 25

@@ -40,7 +40,7 @@ public class Spawner : MonoBehaviour {
     void SpawnCar()
     {
         location += 1; 
-        type = Random.Range(0, car.Count-1);
+        type = Random.Range(0, car.Count);
         if (location == 8) { location = 0; }
         Instantiate(car[type], spawn[location].transform.position, spawn[location].transform.rotation);
         
