@@ -9,6 +9,9 @@ public class SemaphoreLogic : MonoBehaviour {
     static bool VerticalFlowAllowed;
     public float interval = 5; //for 5 seconds
     float timer;
+    [Header("Pedestrians")]
+    public GameObject stopVertPedestrians;
+    public GameObject stopHorPedestrians;
 
 	void Start () {
         VerticalFlowAllowed = false; 
@@ -33,6 +36,9 @@ public class SemaphoreLogic : MonoBehaviour {
     {
         if (VerticalFlowAllowed)
         {
+            stopHorPedestrians.SetActive(false);
+            stopVertPedestrians.SetActive(true);
+
             L1.gameObject.SetActive(true);
             L2.gameObject.SetActive(false);
             L3.gameObject.SetActive(true);
@@ -49,6 +55,9 @@ public class SemaphoreLogic : MonoBehaviour {
         }
         else
         {
+            stopHorPedestrians.SetActive(true);
+            stopVertPedestrians.SetActive(false);
+
             L1.gameObject.SetActive(false);
             L2.gameObject.SetActive(true);
             L3.gameObject.SetActive(false);

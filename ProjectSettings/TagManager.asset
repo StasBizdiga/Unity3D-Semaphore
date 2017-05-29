@@ -8,6 +8,14 @@ TagManager:
   - SpecialCar
   - Person
   - Semaphore
+  - North
+  - PATH
+  - South
+  - West
+  - East
+  - HorrizontalStop
+  - PedestrianStop
+  - Hooman
   layers:
   - Default
   - TransparentFX
