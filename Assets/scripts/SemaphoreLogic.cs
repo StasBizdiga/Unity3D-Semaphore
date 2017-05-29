@@ -19,8 +19,8 @@ public class SemaphoreLogic : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //User Input Handling, Inc/Dec Traffic light switch period
-        if (Input.GetKeyDown("[+]") && interval > 1.0f) { interval -= 1.0f; } // Decrease to min 0.5s per interval
-        else if (Input.GetKeyDown("[-]") && interval < 60.0f) { interval += 1.0f; } // Increase max 60s per interval
+        if (Input.GetKey("[+]") && interval > 1.0f) { interval -= 1.0f; } // Decrease to min 0.5s per interval
+        else if (Input.GetKey("[-]") && interval < 60.0f) { interval += 1.0f; } // Increase max 60s per interval
 
         if (Time.time >= timer) //every interval do:
         {

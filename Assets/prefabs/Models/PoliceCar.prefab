@@ -1645,7 +1645,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: aff430bb128d76f429debc357eca36d0, type: 2}
+  - {fileID: 2100000, guid: 66ed5a0b1d72a684294c72e6600a8781, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1869,7 +1869,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 506a8ea295c224d448dc202a44d6b45a, type: 2}
+  - {fileID: 2100000, guid: 50939f309872b7947b03239ad83cf5b2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2157,7 +2157,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 506a8ea295c224d448dc202a44d6b45a, type: 2}
+  - {fileID: 2100000, guid: 50939f309872b7947b03239ad83cf5b2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2470,7 +2470,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2
   m_Range: 5
   m_SpotAngle: 69
   m_CookieSize: 10
@@ -2506,12 +2506,12 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 0.42667925, g: 0.40830448, b: 0.9411765, a: 1}
-  m_Intensity: 1
-  m_Range: 10
+  m_Intensity: 2
+  m_Range: 15
   m_SpotAngle: 120
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -2543,7 +2543,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.11724138, g: 0, b: 1, a: 1}
   m_Intensity: 1.5
-  m_Range: 2
+  m_Range: 5
   m_SpotAngle: 110
   m_CookieSize: 10
   m_Shadows:
@@ -2578,12 +2578,12 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 0.9338235, g: 0.6789636, b: 0.13046065, a: 1}
-  m_Intensity: 1
-  m_Range: 10
+  m_Intensity: 2
+  m_Range: 15
   m_SpotAngle: 120
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -2615,7 +2615,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 1.5
-  m_Range: 2
+  m_Range: 5
   m_SpotAngle: 110
   m_CookieSize: 10
   m_Shadows:
@@ -2650,7 +2650,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2
   m_Range: 5
   m_SpotAngle: 69
   m_CookieSize: 10
@@ -2737,18 +2737,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8205fc27023aa85488aabcc8952d8cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  is_specialCar: 0
   comesFrom: 
   path: {fileID: 0}
   maxSteerAngle: 45
-  maxMotorTorque: 150
+  maxMotorTorque: 200
   currentSpeed: 0
-  maxSpeed: 300
+  maxSpeed: 650
   isBraking: 0
   frontLeftW: {fileID: 146812369823786742}
   frontRightW: {fileID: 146593956400970192}
   backLeftW: {fileID: 146283615381163014}
   backRightW: {fileID: 146506059445013994}
-  maxBrakeTorque: 200
+  maxBrakeTorque: 400
   stopLight1: {fileID: 108448813349564662}
   stopLight2: {fileID: 108986327789074906}
   sensorLength: 1.5
