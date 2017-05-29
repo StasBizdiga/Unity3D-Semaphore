@@ -34,6 +34,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4559104170352702}
+  - component: {fileID: 136343221129558338}
   m_Layer: 0
   m_Name: Human
   m_TagString: Untagged
@@ -50,7 +51,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4992471284934592}
   - component: {fileID: 33289530193303930}
-  - component: {fileID: 65822706659852070}
   - component: {fileID: 23195861412041246}
   m_Layer: 0
   m_Name: Legs
@@ -68,7 +68,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4252961743125264}
   - component: {fileID: 33414641884197330}
-  - component: {fileID: 135619509727668660}
   - component: {fileID: 23707403069798148}
   m_Layer: 0
   m_Name: LeftHand
@@ -86,7 +85,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4203955292747166}
   - component: {fileID: 33147550585849888}
-  - component: {fileID: 135482354487448186}
   - component: {fileID: 23700701987712498}
   m_Layer: 0
   m_Name: Head
@@ -119,7 +117,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4850093400533320}
   - component: {fileID: 33261714911016188}
-  - component: {fileID: 135051261032106422}
   - component: {fileID: 23883282107619676}
   m_Layer: 0
   m_Name: LeftHand
@@ -137,7 +134,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4883459792480364}
   - component: {fileID: 33657758387103976}
-  - component: {fileID: 136996637856215952}
   - component: {fileID: 23182279214284982}
   m_Layer: 0
   m_Name: Ciolka
@@ -187,7 +183,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4413556629614392}
   - component: {fileID: 33488643108491262}
-  - component: {fileID: 65585081887808108}
   - component: {fileID: 23566848415292170}
   m_Layer: 0
   m_Name: Body
@@ -205,7 +200,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4312276828627092}
   - component: {fileID: 33148369043602884}
-  - component: {fileID: 65350057316591708}
   - component: {fileID: 23333558048503956}
   - component: {fileID: 95747004912233210}
   m_Layer: 0
@@ -239,7 +233,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4915089650906420}
   - component: {fileID: 33841911084873804}
-  - component: {fileID: 65746603521611986}
   - component: {fileID: 23210679858091214}
   m_Layer: 0
   m_Name: LeftArm
@@ -257,7 +250,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4352116788562904}
   - component: {fileID: 33225678650473122}
-  - component: {fileID: 135554426519212836}
   - component: {fileID: 23823950509267764}
   m_Layer: 0
   m_Name: Hair
@@ -400,8 +392,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1204640261619172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.85, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.425, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4027650113386080}
   - {fileID: 4099194144183012}
@@ -826,54 +818,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1908388357296342}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65350057316591708
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1851129324903556}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65585081887808108
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1801619990089248}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65746603521611986
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1908388357296342}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65822706659852070
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1210359338918724}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95190356819191628
 Animator:
   serializedVersion: 3
@@ -925,64 +869,16 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!135 &135051261032106422
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1490891615763968}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &135482354487448186
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1452021414819530}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &135554426519212836
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1986024889397896}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &135619509727668660
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1264657727456964}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136996637856215952
+--- !u!136 &136343221129558338
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1494834657204318}
+  m_GameObject: {fileID: 1204640261619172}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 0.25
+  m_Height: 1.7
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}

@@ -13,6 +13,7 @@ TagManager:
   - South
   - West
   - North
+  - HumanPath
   layers:
   - Default
   - TransparentFX
