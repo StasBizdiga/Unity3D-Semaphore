@@ -6,6 +6,9 @@ public class SemaphoreLogic : MonoBehaviour {
     
     public GameObject L1,L2,L3,L4,L5,L6,L7,L8; // Light: odd-green, even-red
     public GameObject Stop1, Stop2, Stop3, Stop4; //Virtual obstacle for red light
+    [Header("Pedestrians")]
+    public GameObject VertPedestrians; 
+    public GameObject HorPedestrians;
     static bool VerticalFlowAllowed;
     public float interval = 5; //for 5 seconds
     float timer;
@@ -13,6 +16,7 @@ public class SemaphoreLogic : MonoBehaviour {
 	void Start () {
         VerticalFlowAllowed = false; 
         timer = Time.time + interval;
+        UpdateLights();
     }
 
 	
@@ -24,15 +28,18 @@ public class SemaphoreLogic : MonoBehaviour {
 
         if (Time.time >= timer) //every interval do:
         {
-            ChangeLights();
             timer += interval; //set the timer again
-                                          
+            VerticalFlowAllowed = !VerticalFlowAllowed;
         }
+        UpdateLights();
     }
-    void ChangeLights()
+    void UpdateLights()
     {
         if (VerticalFlowAllowed)
         {
+            VertPedestrians.SetActive(false);
+            HorPedestrians.SetActive(true);
+
             L1.gameObject.SetActive(true);
             L2.gameObject.SetActive(false);
             L3.gameObject.SetActive(true);
@@ -49,6 +56,9 @@ public class SemaphoreLogic : MonoBehaviour {
         }
         else
         {
+            VertPedestrians.SetActive(true);
+            HorPedestrians.SetActive(false);
+
             L1.gameObject.SetActive(false);
             L2.gameObject.SetActive(true);
             L3.gameObject.SetActive(false);
@@ -63,7 +73,5 @@ public class SemaphoreLogic : MonoBehaviour {
             Stop3.gameObject.SetActive(false);
             Stop4.gameObject.SetActive(true);
         }
-    VerticalFlowAllowed = !VerticalFlowAllowed;
-
     }
 }

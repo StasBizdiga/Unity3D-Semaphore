@@ -9,7 +9,7 @@ public class PedestrianWalk : MonoBehaviour
     private int currentNode = 0;
 
     [Header("Sensors")]
-    public float sensorLength = 2f;
+    public float sensorLength = 0.5f;
     public float frontSensorPos = 0f;
 
     private NavMeshAgent agent = new NavMeshAgent();
@@ -57,7 +57,7 @@ public class PedestrianWalk : MonoBehaviour
         Vector3 sensorStartingPos = transform.position;
         sensorStartingPos.z += frontSensorPos;
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
-        if (Physics.Raycast(sensorStartingPos, fwd, out hit, sensorLength))
+        if (Physics.Raycast(sensorStartingPos, fwd, out hit, sensorLength) && !(hit.transform.tag == "Hooman"))
         {
             agent.isStopped = true;
             rightHandAnim.enabled = false;

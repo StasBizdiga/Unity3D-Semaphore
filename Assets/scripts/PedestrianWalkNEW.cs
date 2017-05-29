@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class PedestrianWalNEW : MonoBehaviour
+public class PedestrianWalkNEW : MonoBehaviour
 {
     int comesFrom;
     int pathChoice; // random choice
