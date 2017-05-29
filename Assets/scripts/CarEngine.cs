@@ -36,7 +36,7 @@ public class CarEngine : MonoBehaviour
         else if (this.transform.position.z > 5f) { comesFrom = "North"; }
         else if (this.transform.position.x < -5f) { comesFrom = "West"; }
         else if (this.transform.position.z < -5f) { comesFrom = "South"; } 
-        pathChoice = Random.Range(0,3); //
+        pathChoice = Random.Range(0,4); //
         path = GameObject.FindWithTag(comesFrom).transform; //
         currentNode = 0;
         Transform[] pathTransforms = path.GetChild(pathChoice).GetComponentsInChildren <Transform>(); //

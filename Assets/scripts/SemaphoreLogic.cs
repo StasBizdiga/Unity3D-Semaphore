@@ -16,6 +16,7 @@ public class SemaphoreLogic : MonoBehaviour {
 	void Start () {
         VerticalFlowAllowed = false; 
         timer = Time.time + interval;
+        ChangeLights();
     }
 
 	
@@ -36,8 +37,8 @@ public class SemaphoreLogic : MonoBehaviour {
     {
         if (VerticalFlowAllowed)
         {
-            stopHorPedestrians.SetActive(false);
-            stopVertPedestrians.SetActive(true);
+            stopHorPedestrians.SetActive(true);
+            stopVertPedestrians.SetActive(false);
 
             L1.gameObject.SetActive(true);
             L2.gameObject.SetActive(false);
@@ -55,8 +56,8 @@ public class SemaphoreLogic : MonoBehaviour {
         }
         else
         {
-            stopHorPedestrians.SetActive(true);
-            stopVertPedestrians.SetActive(false);
+            stopHorPedestrians.SetActive(false);
+            stopVertPedestrians.SetActive(true);
 
             L1.gameObject.SetActive(false);
             L2.gameObject.SetActive(true);
