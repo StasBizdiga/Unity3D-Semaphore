@@ -26,8 +26,8 @@ public class Spawner : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown("[*]") && interval > 2.0f) { interval -= 0.5f; } // Decrease to min 0.5s per interval
-        else if (Input.GetKeyDown("[/]") && interval < 30.0f) { interval += 0.5f; } // Increase max 60s per interval
+        if (Input.GetKey("[*]") && interval > 2.0f) { interval -= 0.5f; } // Decrease to min 0.5s per interval
+        else if (Input.GetKey("[/]") && interval < 30.0f) { interval += 0.5f; } // Increase max 60s per interval
 
         if (Time.time >= timer) //every interval do:
         {
