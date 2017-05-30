@@ -52,11 +52,11 @@ public class CarEngine : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Braking();
         Sensors();
         ApplySteer();
         Drive();
         CheckWaypointDistance();
-        Braking();
     }
     private void Sensors()
     {

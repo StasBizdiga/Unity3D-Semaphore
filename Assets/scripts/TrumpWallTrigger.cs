@@ -26,12 +26,6 @@ public class TrumpWallTrigger : MonoBehaviour
         {
             wall1.SetActive(true);
             wall2.SetActive(true);
-            if (enterZone1.activeSelf)
-            {
-                enterZone1.SetActive(false);
-                enterZone2.SetActive(false);
-                disabledZone = true;
-            }
         }
     }
     void OnTriggerExit(Collider other)
@@ -41,11 +35,5 @@ public class TrumpWallTrigger : MonoBehaviour
             wall1.SetActive(false);
             wall2.SetActive(false);
         }
-        if (disabledZone)
-        {
-            enterZone1.SetActive(true);
-            enterZone2.SetActive(true);
-        }
-
     }
 }
