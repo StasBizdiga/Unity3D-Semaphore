@@ -4,6 +4,8 @@ using UnityEngine.AI;
 
 public class PedestrianWalk : MonoBehaviour
 {
+    int comesFrom;
+    int pathChoice; // random choice
     public Transform path;
     private List<Transform> nodes = new List<Transform>();
     private int currentNode = 0;
@@ -20,8 +22,16 @@ public class PedestrianWalk : MonoBehaviour
 
     void Start()
     {
+        if (this.transform.position.x > 5f) { comesFrom = 1; } 
+        else if (this.transform.position.z > 5f) { comesFrom = 0; }
+        else if (this.transform.position.x < -5f) { comesFrom = 3; }
+        else if (this.transform.position.z < -5f) { comesFrom = 2; }
+        pathChoice = Random.Range(0, 2); //
+        path = GameObject.FindWithTag("HumanPath").transform; //
+        path = path.GetChild(comesFrom).transform;
+
         currentNode = 0;
-        Transform[] pathTransforms = path.GetComponentsInChildren<Transform>();
+        Transform[] pathTransforms = path.GetChild(pathChoice).GetComponentsInChildren<Transform>(); //
         agent = GetComponent<NavMeshAgent>();
         leftHandAnim = leftHand.GetComponent<Animator>();
         rightHandAnim = rightHand.GetComponent<Animator>();
@@ -30,7 +40,7 @@ public class PedestrianWalk : MonoBehaviour
 
         foreach (var item in pathTransforms)
         {
-            if (item != path.transform)
+            if (item != path.GetChild(pathChoice).transform)
             {
                 nodes.Add(item);
             }
