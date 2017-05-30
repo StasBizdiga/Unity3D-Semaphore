@@ -17,44 +17,14 @@ Platform assembly: C:\Users\nato2\Documents\UnityProjects\Semaphore\Testing\Sema
 Loading C:\Users\nato2\Documents\UnityProjects\Semaphore\Testing\Semaphore-Lore_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\nato2\Documents\UnityProjects\Semaphore\Testing\Semaphore-Lore_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\nato2\Documents\UnityProjects\Semaphore\Testing\Semaphore-Lore_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.320 seconds
+- Completed reload, in  0.361 seconds
 Platform assembly: C:\Users\nato2\Documents\UnityProjects\Semaphore\Testing\Semaphore-Lore_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\nato2\Documents\UnityProjects\Semaphore\Testing\Semaphore-Lore_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.036152 ms
-Can not play a disabled audio source
- 
-(Filename:  Line: 536)
-
-Can not play a disabled audio source
- 
-(Filename:  Line: 1951)
-
-Can not play a disabled audio source
- 
-(Filename:  Line: 1951)
-
-Can not play a disabled audio source
- 
-(Filename:  Line: 1951)
-
-Can not play a disabled audio source
- 
-(Filename:  Line: 1951)
-
-Can not play a disabled audio source
- 
-(Filename:  Line: 1951)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.467854 ms
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 2663.
-Total: 1.750333 ms (FindLiveObjects: 0.586484 ms CreateObjectMapping: 0.133939 ms MarkObjects: 1.004831 ms  DeleteObjects: 0.022228 ms)
-
+UnloadTime: 2.931850 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1adc -> priority: 1 
-  Thread -> id: 1b1c -> priority: 1 
+  Thread -> id: 264c -> priority: 1 
+  Thread -> id: 2298 -> priority: 1 
