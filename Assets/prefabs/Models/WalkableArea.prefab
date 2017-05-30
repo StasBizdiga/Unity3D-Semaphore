@@ -432,7 +432,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368582545029160}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.591939, y: -0.17054151, z: 5.7755895}
+  m_LocalPosition: {x: -0.591939, y: -0.231, z: 5.7755895}
   m_LocalScale: {x: 10.060627, y: 0.15928367, z: 1.3876683}
   m_Children: []
   m_Father: {fileID: 4758674455392262}
@@ -484,7 +484,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1986458830174646}
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -4.8119392, y: -0.17054151, z: 1.5955894}
+  m_LocalPosition: {x: -4.8119392, y: -0.231, z: 1.5955894}
   m_LocalScale: {x: 10.060627, y: 0.15928367, z: 1.4113661}
   m_Children: []
   m_Father: {fileID: 4758674455392262}
@@ -549,7 +549,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1464254531301738}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.591939, y: -0.17054151, z: -2.7044106}
+  m_LocalPosition: {x: -0.591939, y: -0.231, z: -2.7044106}
   m_LocalScale: {x: 10.060627, y: 0.15928367, z: 1.4113661}
   m_Children: []
   m_Father: {fileID: 4758674455392262}
@@ -574,8 +574,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1786402180936662}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.561939, y: 0.13454151, z: -1.6055894}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.54, y: 0.16, z: -1.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4117052081241494}
@@ -660,7 +660,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1380628802603766}
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 3.6380608, y: -0.17054151, z: 1.5955894}
+  m_LocalPosition: {x: 3.6380608, y: -0.231, z: 1.5955894}
   m_LocalScale: {x: 10.060627, y: 0.15928367, z: 1.4113661}
   m_Children: []
   m_Father: {fileID: 4758674455392262}
@@ -1698,8 +1698,8 @@ CapsuleCollider:
   m_GameObject: {fileID: 1611558391982330}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 0
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}

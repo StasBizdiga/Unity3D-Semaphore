@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class UserController : MonoBehaviour {
 
+    public GameObject fps;
     public List<GameObject> cam = new List<GameObject>();
+    private bool flip = false;
     private int current;
     void Start()
     {
@@ -25,6 +27,15 @@ public class UserController : MonoBehaviour {
             cam[3].gameObject.SetActive(false);
             cam[current].gameObject.SetActive(true); 
         }
+
+		if (Input.GetKeyDown(KeyCode.V))
+        {
+        	if(fps.gameObject){
+            flip = !flip;
+            fps.gameObject.SetActive(flip);
+        	} 
+        }
+
 
     }
 }
