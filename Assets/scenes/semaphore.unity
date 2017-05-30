@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 35342445}
   m_Layer: 0
   m_Name: VertTrigger1
-  m_TagString: Untagged
+  m_TagString: PedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -701,6 +701,26 @@ Prefab:
       propertyPath: interval
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4325100363404476, guid: a55dc2951d9cf8f449c9f39ad0756a72, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.515
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325100363404476, guid: a55dc2951d9cf8f449c9f39ad0756a72, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.599
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312895166172168, guid: a55dc2951d9cf8f449c9f39ad0756a72, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522527889742914, guid: a55dc2951d9cf8f449c9f39ad0756a72, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522527889742914, guid: a55dc2951d9cf8f449c9f39ad0756a72, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.94
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a55dc2951d9cf8f449c9f39ad0756a72, type: 2}
   m_IsPrefabParent: 0
@@ -801,17 +821,38 @@ GameObject:
   m_PrefabParentObject: {fileID: 1496798068015906, guid: d86bc77ac3fa33645a309d546ca8f64f,
     type: 2}
   m_PrefabInternal: {fileID: 1296121160}
---- !u!114 &159832293
-MonoBehaviour:
+--- !u!23 &159832293
+MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 159832290}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3e9ae7867ba2db41b537e92014b890c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &161156940 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1244248910797360, guid: a93ec8c8c420b5142bfb5bf268bcdf8c,
@@ -831,7 +872,7 @@ GameObject:
   - component: {fileID: 162632659}
   m_Layer: 0
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: LatePedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -933,17 +974,38 @@ GameObject:
   m_PrefabParentObject: {fileID: 1937259973814528, guid: d86bc77ac3fa33645a309d546ca8f64f,
     type: 2}
   m_PrefabInternal: {fileID: 1296121160}
---- !u!114 &192906282
-MonoBehaviour:
+--- !u!23 &192906282
+MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 192906279}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3e9ae7867ba2db41b537e92014b890c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &215145580 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1929894648881706, guid: 5db8c43b8f2404e4caa3cf5b2bd11659,
@@ -1026,7 +1088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &264159382
 Light:
   m_ObjectHideFlags: 0
@@ -1192,7 +1254,7 @@ GameObject:
   - component: {fileID: 310087896}
   m_Layer: 0
   m_Name: VertTrigger2 (1)
-  m_TagString: Untagged
+  m_TagString: PedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1676,7 +1738,7 @@ GameObject:
   - component: {fileID: 419689798}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: LatePedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1776,7 +1838,7 @@ GameObject:
   - component: {fileID: 502849914}
   m_Layer: 0
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: LatePedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1970,7 +2032,7 @@ GameObject:
   - component: {fileID: 563843046}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: LatePedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2088,7 +2150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4758674455392262, guid: 2439bfa1f85c10e4c8b78a03a44429e2, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 23611726529968516, guid: 2439bfa1f85c10e4c8b78a03a44429e2,
         type: 2}
@@ -2189,6 +2251,22 @@ Prefab:
         type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4797484139146622, guid: 2439bfa1f85c10e4c8b78a03a44429e2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.231
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117052081241494, guid: 2439bfa1f85c10e4c8b78a03a44429e2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.231
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695095553389924, guid: 2439bfa1f85c10e4c8b78a03a44429e2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.231
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386592105589886, guid: 2439bfa1f85c10e4c8b78a03a44429e2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.231
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2439bfa1f85c10e4c8b78a03a44429e2, type: 2}
@@ -2320,6 +2398,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4427241584862914, guid: 2f263efe0b4ec614e87056fecac56fd7, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 6.6889257
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f263efe0b4ec614e87056fecac56fd7, type: 2}
   m_IsPrefabParent: 0
@@ -2342,7 +2424,7 @@ GameObject:
   - component: {fileID: 607240106}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: LatePedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2803,7 +2885,7 @@ GameObject:
   - component: {fileID: 778388095}
   m_Layer: 0
   m_Name: HorTrigger1
-  m_TagString: Untagged
+  m_TagString: PedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3001,7 +3083,7 @@ GameObject:
   - component: {fileID: 812045621}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: LatePedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3242,7 +3324,7 @@ GameObject:
   - component: {fileID: 883384290}
   m_Layer: 0
   m_Name: HorTrigger1 (1)
-  m_TagString: Untagged
+  m_TagString: PedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3391,17 +3473,38 @@ GameObject:
   m_PrefabParentObject: {fileID: 1346500066053216, guid: d86bc77ac3fa33645a309d546ca8f64f,
     type: 2}
   m_PrefabInternal: {fileID: 1296121160}
---- !u!114 &911150133
-MonoBehaviour:
+--- !u!23 &911150133
+MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 911150130}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3e9ae7867ba2db41b537e92014b890c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &929082587
 GameObject:
   m_ObjectHideFlags: 0
@@ -3756,7 +3859,7 @@ GameObject:
   - component: {fileID: 1037084911}
   m_Layer: 0
   m_Name: VertTrigger2
-  m_TagString: Untagged
+  m_TagString: PedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3997,7 +4100,7 @@ GameObject:
   - component: {fileID: 1124623958}
   m_Layer: 0
   m_Name: HorTrigger2 (1)
-  m_TagString: Untagged
+  m_TagString: PedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4194,7 +4297,7 @@ GameObject:
   - component: {fileID: 1249360051}
   m_Layer: 0
   m_Name: HorTrigger2
-  m_TagString: Untagged
+  m_TagString: PedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4539,15 +4642,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4664134616752554, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
       propertyPath: m_LocalScale.x
-      value: 6.318427
+      value: 0.8169385
       objectReference: {fileID: 0}
     - target: {fileID: 4664134616752554, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.488
+      value: 5.22
       objectReference: {fileID: 0}
     - target: {fileID: 1346500066053216, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
       propertyPath: m_Layer
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 65446695732834166, guid: d86bc77ac3fa33645a309d546ca8f64f,
         type: 2}
@@ -4556,7 +4659,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4609590889534786, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
       propertyPath: m_LocalScale.x
-      value: 6.1568213
+      value: 0.7378039
       objectReference: {fileID: 0}
     - target: {fileID: 4609590889534786, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4569,7 +4672,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4632992696892666, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
       propertyPath: m_LocalScale.x
-      value: 6.6872587
+      value: 0.8140447
       objectReference: {fileID: 0}
     - target: {fileID: 4632992696892666, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4582,11 +4685,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4846858672199096, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
       propertyPath: m_LocalScale.x
-      value: 5.7997723
+      value: 0.60992867
       objectReference: {fileID: 0}
     - target: {fileID: 4846858672199096, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 5.423
+      value: 5.153
       objectReference: {fileID: 0}
     - target: {fileID: 114724928580998602, guid: d86bc77ac3fa33645a309d546ca8f64f,
         type: 2}
@@ -4612,6 +4715,54 @@ Prefab:
         type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597342572476482, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496798068015906, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937259973814528, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346500066053216, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
+      propertyPath: m_TagString
+      value: CarStop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1937259973814528, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
+      propertyPath: m_TagString
+      value: CarStop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1597342572476482, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
+      propertyPath: m_TagString
+      value: CarStop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496798068015906, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
+      propertyPath: m_TagString
+      value: CarStop
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664134616752554, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.1441898
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664134616752554, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4609590889534786, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.1972555
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632992696892666, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.216571
+      objectReference: {fileID: 0}
+    - target: {fileID: 4846858672199096, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.2276222
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d86bc77ac3fa33645a309d546ca8f64f, type: 2}
@@ -5381,6 +5532,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1104648380436740, guid: 6617953fed192be47a300439dfe686bb, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343768839982740, guid: 6617953fed192be47a300439dfe686bb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6617953fed192be47a300439dfe686bb, type: 2}
   m_IsPrefabParent: 0
@@ -5502,7 +5661,7 @@ Transform:
   - {fileID: 1941948007}
   - {fileID: 72058708}
   m_Father: {fileID: 1824410931}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1731335545
 GameObject:
@@ -5646,7 +5805,7 @@ GameObject:
   - component: {fileID: 1792086110}
   m_Layer: 0
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: LatePedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5752,8 +5911,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1371534290}
   - {fileID: 1726311288}
+  - {fileID: 1371534290}
   - {fileID: 745562905}
   - {fileID: 50977817}
   m_Father: {fileID: 0}
@@ -6401,7 +6560,7 @@ GameObject:
   - component: {fileID: 1956613921}
   m_Layer: 0
   m_Name: VertTrigger1 (1)
-  m_TagString: Untagged
+  m_TagString: PedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6594,17 +6753,38 @@ GameObject:
   m_PrefabParentObject: {fileID: 1597342572476482, guid: d86bc77ac3fa33645a309d546ca8f64f,
     type: 2}
   m_PrefabInternal: {fileID: 1296121160}
---- !u!114 &1978410548
-MonoBehaviour:
+--- !u!23 &1978410548
+MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1978410545}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3e9ae7867ba2db41b537e92014b890c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &2066893198
 GameObject:
   m_ObjectHideFlags: 0
@@ -6619,7 +6799,7 @@ GameObject:
   - component: {fileID: 2066893200}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: LatePedestrianTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6923,6 +7103,7 @@ MonoBehaviour:
   - {fileID: 1366662305064390, guid: fe1c4fcebb4d0db468bdebecb7f7d833, type: 2}
   - {fileID: 1996769596569336, guid: 7663b72d7bd272a47b1f0bc20da01f93, type: 2}
   - {fileID: 1091466333963794, guid: 13eb3ef484551da439c0060995cfee8d, type: 2}
+  - {fileID: 1914478839632292, guid: 6d98409e35a9c30449e8de966fb03c7e, type: 2}
   spawn:
   - {fileID: 360838200}
   - {fileID: 590221109}

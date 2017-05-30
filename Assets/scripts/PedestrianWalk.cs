@@ -67,7 +67,7 @@ public class PedestrianWalk : MonoBehaviour
         Vector3 sensorStartingPos = transform.position;
         sensorStartingPos.z += frontSensorPos;
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
-        if (Physics.Raycast(sensorStartingPos, fwd, out hit, sensorLength) && !(hit.transform.tag == "Hooman"))
+        if (Physics.Raycast(sensorStartingPos, fwd, out hit, sensorLength) && hit.transform.tag != "Hooman" && hit.transform.tag != "PedestrianTrigger" && hit.transform.tag != "CarStop" && hit.transform.tag != "LatePedestrianTrigger")
         {
             agent.isStopped = true;
             rightHandAnim.enabled = false;

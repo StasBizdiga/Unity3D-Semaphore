@@ -17,6 +17,9 @@ TagManager:
   - South
   - PATH
   - Hooman
+  - CarStop
+  - PedestrianTrigger
+  - LatePedestrianTrigger
   layers:
   - Default
   - TransparentFX

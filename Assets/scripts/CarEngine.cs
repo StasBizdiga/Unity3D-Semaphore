@@ -63,36 +63,52 @@ public class CarEngine : MonoBehaviour
         RaycastHit hit = new RaycastHit();
         Vector3 sensorStartingPos = transform.position;
         sensorStartingPos.z += frontSensorPos;
-        isBraking = false;  //
-        if (Physics.Raycast(sensorStartingPos, transform.forward, out hit, sensorLength)) //front center sensor
+        isBraking = false;
+        bool specialCarCheck = gameObject.tag == "SpecialCar";
+        if (Physics.Raycast(sensorStartingPos, transform.forward, out hit, sensorLength) && 
+            !(hit.transform.tag == "CarStop" && specialCarCheck) && 
+            hit.transform.tag != "PedestrianTrigger" && 
+            hit.transform.tag != "LatePedestrianTrigger") //front center sensor
         {
             Debug.DrawLine(sensorStartingPos, hit.point);
             isBraking = true;
         }
 
         sensorStartingPos.x += frontSideSensorPos;
-        if (Physics.Raycast(sensorStartingPos, transform.forward, out hit, sensorLength)) //front right sensor
+        if (Physics.Raycast(sensorStartingPos, transform.forward, out hit, sensorLength) && 
+            !(hit.transform.tag == "CarStop" && specialCarCheck) &&
+            hit.transform.tag != "PedestrianTrigger" &&
+            hit.transform.tag != "LatePedestrianTrigger") //front right sensor
         {
             Debug.DrawLine(sensorStartingPos, hit.point);
             isBraking = true;
         }
 
 
-        if (Physics.Raycast(sensorStartingPos, Quaternion.AngleAxis(-frontSensorAngle, transform.up) * transform.forward, out hit, sensorLength)) //front right angle sensor
+        if (Physics.Raycast(sensorStartingPos, Quaternion.AngleAxis(-frontSensorAngle, transform.up) * transform.forward, out hit, sensorLength) && 
+            !(hit.transform.tag == "CarStop" && specialCarCheck) &&
+            hit.transform.tag != "PedestrianTrigger" &&
+            hit.transform.tag != "LatePedestrianTrigger") //front right angle sensor
         {
             Debug.DrawLine(sensorStartingPos, hit.point);
             isBraking = true;
         }
 
         sensorStartingPos.x -= 2 * frontSideSensorPos;
-        if (Physics.Raycast(sensorStartingPos, transform.forward, out hit, sensorLength)) //front left sensor
+        if (Physics.Raycast(sensorStartingPos, transform.forward, out hit, sensorLength) && 
+            !(hit.transform.tag == "CarStop" && specialCarCheck) &&
+            hit.transform.tag != "PedestrianTrigger" &&
+            hit.transform.tag != "LatePedestrianTrigger") //front left sensor
         {
             Debug.DrawLine(sensorStartingPos, hit.point);
             isBraking = true;
         }
 
 
-        if (Physics.Raycast(sensorStartingPos, Quaternion.AngleAxis(frontSensorAngle, transform.up) * transform.forward, out hit, sensorLength)) //front left angle sensor
+        if (Physics.Raycast(sensorStartingPos, Quaternion.AngleAxis(frontSensorAngle, transform.up) * transform.forward, out hit, sensorLength) && 
+            !(hit.transform.tag == "CarStop" && specialCarCheck) &&
+            hit.transform.tag != "PedestrianTrigger" &&
+            hit.transform.tag != "LatePedestrianTrigger") //front left angle sensor
         {
             Debug.DrawLine(sensorStartingPos, hit.point);
             isBraking = true;
